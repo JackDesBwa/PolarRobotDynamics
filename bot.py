@@ -78,6 +78,7 @@ for k in xrange(kmax):
 	robot.process(cl, cr)
 	plots.append((t, x, y, vl, vr, cl, cr, theta, curv, dtheta.y, dcurv.y))
 
+plt.subplots_adjust(left=0.1, bottom=0.05, right=0.95, top=0.95, wspace=0.3, hspace=0.4)
 axes_t_tics = plt.subplot(421)
 plt.title('Left wheel speed (tics/s)')
 plt.plot(tuple(plots[i][0] for i in xrange(kmax)), tuple(plots[i][3] for i in xrange(kmax)))
@@ -111,6 +112,7 @@ plt.plot(tuple(plots[i][0] for i in xrange(kmax)), tuple(plots[i][2] * 1000 for 
 
 if simu_config.plot_states:
 	plt.figure()
+	plt.subplots_adjust(left=0.1, bottom=0.05, right=0.95, top=0.95, wspace=0.3, hspace=0.4)
 	plt.subplot(321)
 	plt.title('curv / dcurv')
 	plt.plot(tuple(plots[i][8] for i in xrange(kmax)), tuple(plots[i][10] for i in xrange(kmax)))

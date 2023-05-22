@@ -4,6 +4,12 @@ dt = 0.01
 # Total simulation time (in s)
 total_time = 10
 
+# Display plots (needs matplotlib)
+display_plots = True
+
+# Display live vizualisation (needs pyglet)
+display_live = True
+
 # Plot states relations
 plot_states = False
 

@@ -9,8 +9,9 @@ How to use this little simulator ?
 Dependancies
 ============
 
-1) Python
-2) Matplotlib
+- Python
+- matplotlib (if graph enabled)
+- pyglet (if live enabled)
 
 Purpose
 =======

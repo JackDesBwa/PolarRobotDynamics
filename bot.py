@@ -1,5 +1,4 @@
 # Libraries
-import numpy as np
 import matplotlib.pylab as plt
 from math import sin, cos, pi
 from random import random
